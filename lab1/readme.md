@@ -73,7 +73,7 @@ At the top level are `DataModule` classes, which are responsible for quite a few
 - Specifying information about the targets (e.g. a class mapping)
 - Specifying data augmentation transforms to apply in training
 
-In the process of doing the above, `DataModule`s make use of a couple of other classes:
+In the process of doing the above, `DataModule`s make use of a couple of other  classes:
 
 1. They wrap underlying data in a `torch Dataset`, which returns individual (and optionally, transformed) data instances.
 2. They wrap the `torch Dataset` in a `torch DataLoader`, which samples batches, shuffles their order, and delivers them to the GPU.
